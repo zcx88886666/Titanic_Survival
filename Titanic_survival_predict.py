@@ -13,5 +13,5 @@ print(train_df.info())
 print('_' * 40)
 print(test_df.info())
 print(train_df.describe())
-train_df.describe(include=['0'])
-train_df[['Pclass', 'Survived']].groupby(['Pclass'], as_index = False).mean().sort_values(by='Survived', ascending=False)
+print(train_df.describe(include=['O'])) # include the string type "O"
+print(train_df[['Pclass', 'Survived']].groupby(['Pclass'], as_index = False).mean().sort_values(by='Survived', ascending=False))
